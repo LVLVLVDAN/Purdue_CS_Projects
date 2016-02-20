@@ -1,0 +1,122 @@
+For the second project I have added some functionalites to the code of the
+first project in order to meet the requirment for this project. Basically, I
+can say the parser is very similar to the first project but depending on tree
+codes I do some additional tasks in order to distinguish between the
+intialized and uninitialized variables. I tried to cover all of the
+requirments for the second project such switch-case, while, if-else, pointers,
+global variables, and so on.
+
+
+------------------Data structure  --------------------
+For keeping all of the defined variables, global variables, and uninitialized
+variables (uninitialized  global and local variables have been saved into two
+different lists) I have used single linked list that is defined as a structure in the
+program that is called node_var. This data structure includes the following
+members:
+
+struct node_var{
+
+    char *function_name  // name of function that variable is defined or 
+    char *variable    // name of variable
+    int value // is it initialized or not (it is used for global variables)
+    int level // the level that we are processing the variable. (For example
+    are we inside of if or while loop or not).
+    int isglobal  // is this variable global or not 
+    struct node_var *next // pointer to the next node in the list 
+
+
+}
+
+5 different instances of the above data structure is used in my code that are
+described as follows:
+
+1- result_local: store the local uninitialized variables. This list should be printed
+into the output.txt
+
+2- result_global: store the global uninitialized variables. This list should
+be printed into the output.txt
+
+
+3- mainGlobal: List of all global variables. If a global variable is
+initilized at the value paramter is set to 1. 
+
+
+4- blockDef: This the list of initilized variables that are defined locally
+(locally means that the scope of the code that the variable is accessible. For example if we define a variable inside of if, that variable is
+defined locally for that if statement). This data strucute is defined  as a local
+data strucure in the parse_tree function. 
+
+
+5- mainDef: This is a list is used for handling the pointers. if a pointer is
+initialized it will be added to this list. 
+
+
+In addition, some utility functions have been implemented in order to manage
+linked lists such as add_llist (add a new element to the list), search inside
+of list (search_llist) , print_llist(print a list)
+the list, copy the linked list (copy_llist) and so on. 
+
+
+----------------------------------------------------------
+
+The second data strucure that I have used to support pointers is a pointer
+map to provide a map between each of the paramters in a function call and each
+of the arguments in the defination of the function. I have used this map in
+order to determine which variables are pointer or not pointer. 
+
+This pointer map includes the following memebrs:
+struct pointer_map
+{
+
+  char *function_name  // Which function is called (callee)
+  char *caller  // which function is the caller of callee
+  int type  // is the variable is a pointer or not
+  char *param  // function paramter
+  char *argument // function argument 
+
+
+}
+
+-------------------------------------------------------------------------
+Some of the most important functions have been described as follows:
+
+1- print_llist_local: This function print the list of uninitialized local and
+global variables based on DFS pre-order as requested in the project
+description. 
+
+2- parse_tree(): This function is used to parse the tree and based on tree
+code do some special tasks in order to determine which variables have been
+defined or not defined. VAR_DECL, MODIFY_EXPR, COND_EXPR, SWITCH_EXPR,
+GOTO_EXPR, RETURN_EXPR, DECL_EXPR, CALL_EXPR are the most important labels that have been
+used to determine which variables have been initilized or not initilized. 
+
+
+3- Case_handler1: This function is written seperately to handle switch-case.
+Basically when we reach to a SWITCH_EXPR label in the parse tree we call this
+function to handle switch case. 
+
+
+4- function_parse and parse_function_call:For this project since we need to
+consider the control flow in our
+analysis two seprate functions are written to generate a call graph implicitly.  
+The first function is function_parse to  to parse the main function at the
+begining of the program and after that when we visit a call_expr node in the
+AST we call parse_function_call by the name of callee to traverse the
+function when it is called. 
+
+
+5- global_vars_parse: This functon is used to store  all of the global
+variables that have defined in the program. if a global variable is
+initialized then value paramter will be set 1 for that variable.
+
+
+---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
