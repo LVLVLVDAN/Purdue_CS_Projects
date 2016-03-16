@@ -1,0 +1,45 @@
+\begin{verbatim}
+client.0 sends to server.1
+client.1 sends to server.0
+client.2 sends to server.0
+client.3 sends to server.1
+server.1 sends back to mb cli.0
+server.0 sends back to mb cli.1
+client.0 sends to server.1
+client.1 sends to server.0
+server.1 sends back to mb cli.3
+server.0 sends back to mb cli.2
+client.3 sends to server.1
+client.2 sends to server.0
+server.1 sends back to mb cli.0
+server.0 sends back to mb cli.1
+client.0 sends to server.0
+client.1 sends to server.0
+server.1 sends back to mb cli.3
+server.0 sends back to mb cli.2
+client.3 sends to server.0
+client.2 sends to server.0
+
+server.0 sends back to mb cli.0
+client.0 sends to server.0
+server.0 sends back to mb cli.1
+client.1 sends to server.0
+server.0 sends back to mb cli.3
+client.3 sends to server.1
+server.0 sends back to mb cli.2
+server.1 sends back to mb cli.3
+client.2 sends to server.1
+client.3 sends to server.1
+server.0 sends back to mb cli.0
+server.1 sends back to mb cli.2
+client.0 sends to server.1
+client.2 sends to server.1
+server.0 sends back to mb cli.1
+server.1 sends back to mb cli.3
+server.1 sends back to mb cli.0
+server.1 sends back to mb cli.2
+server.0 sends back to mb stop
+server.1 sends back to mb stop
+messages created   42
+current messages    0
+\end{verbatim}

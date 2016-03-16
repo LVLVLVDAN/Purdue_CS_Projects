@@ -1,0 +1,21 @@
+            CSIM Simulation Report (Version 19.0 for SPARC Solaris)
+
+                           Mon Feb 15 17:52:15 2010
+
+
+                     Ending simulation time:      1957.940
+                     Elapsed simulation time:     1957.940
+                     CPU time used (seconds):        0.020
+
+
+FACILITY SUMMARY 
+
+facility     service    service          through-    queue     response   compl
+name           disc      time    util.     put       length      time     count
+--------------------------------------------------------------------------------
+f            pre_res    1.54317  0.788    0.51074    0.92397    1.80908     1000
+   > server  0          1.48727  0.490    0.32943                            645
+   > server  1          1.64473  0.298    0.18131                            355
+
+
+

@@ -1,0 +1,62 @@
+\documentclass[10pt,times,comment,rego]{article}    % Specifies the document style. 
+
+%\input{psfig-dvips} 
+\input{psfig} 
+
+
+\usepackage{amsfonts,latexsym,epsf,amsmath,amssymb}
+
+\usepackage{fullpage,graphicx}
+
+\renewcommand{\baselinestretch}{0.95}
+
+
+\vbadness=10000 % Turns off the Under full \vbox warnings
+\hbadness=10000
+
+
+%\usepackage{fullpage, comment, psfig}
+
+\begin{document}
+
+\input ex1.c
+\newpage
+\input ex1.out
+\newpage
+
+\input ex2.c
+\newpage
+\input ex2.out
+\newpage
+
+\input classes.c
+\newpage
+\input classes-xxx.out
+\newpage
+
+\input pre_res.c
+\newpage
+\input pre_res.out
+\newpage
+
+\input rnd_rob.c
+\newpage
+\input rnd_rob.out
+\newpage
+
+\input rnd_pri.c
+\newpage
+\input rnd_pri.out
+\newpage
+
+\input client_s.c
+\newpage
+\input client_s.out
+\newpage
+
+\input threads.c
+\newpage
+\input threads.out
+
+
+\end{document}

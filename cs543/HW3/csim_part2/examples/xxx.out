@@ -1,0 +1,68 @@
+            CSIM Simulation Report (Version 19.0 for SPARC Solaris)
+
+                           Mon Nov 10 23:28:18 2014
+
+
+                     Ending simulation time:      1039.317
+                     Elapsed simulation time:     1039.317
+                     CPU time used (seconds):        0.000
+
+
+STORAGE SUMMARY 
+
+storage                 alloc alloc dealloc dealloc            in-que  in-queue
+name             size  amount count  amount   count    util    length      time
+--------------------------------------------------------------------------------
+s                4096  1185.7   100  1127.0     100   0.470   0.46001    4.78098
+
+
+
+TABLE 1:  amt requested
+
+      minimum       274.000000          mean                 1126.980000
+      maximum      2017.000000          variance           247059.696566
+      range        1743.000000          standard deviation    497.051000
+      observations         100          coefficient of var      0.441047
+
+TABLE 2:  service times
+
+      minimum         0.204548          mean                   18.734633
+      maximum        77.850028          variance              293.975573
+      range          77.645480          standard deviation     17.145716
+      observations         100          coefficient of var      0.915188
+
+QTABLE 1:  waiting times
+
+      initial       0      minimum       0      mean                    2.262603
+      final         0      maximum       7      variance                2.839859
+      entries     100      range         7      standard deviation      1.685188
+      exits       100                           coeff of variation      0.744801
+
+
+	Storage Report: s
+    capacity      4096
+    amt           1126.980
+    util          0.470
+    srv_tm        18.730
+    qlen          0.460
+    resp          4.781
+    completes     100
+    queued        30
+CSIM MODEL STATISTICS
+
+CPU time used (sec):         0.000 
+Events processed:              331 
+Memory allocated:            11576 bytes 
+Calls to malloc:                27 
+Processes 
+     Started:                  101 
+     Saved:                    211 
+     Terminated:               100 
+     High water mark:            8 
+Stacks 
+     Allocated:                121 
+     High water mark:          970 words 
+     Average:                  126 words 
+     Maximum:                  133 words 
+     Current:                  129 words 
+

@@ -1,0 +1,115 @@
+            CSIM Simulation Report (Version 19.0 for SPARC Solaris)
+
+                                 Widget Company
+
+                           Sun Nov 16 09:44:36 2014
+
+
+                     Ending simulation time:     26785.411
+                     Elapsed simulation time:    26785.411
+                     CPU time used (seconds):        0.000
+
+
+FACILITY SUMMARY 
+
+facility     service    service          through-    queue     response   compl
+name           disc      time    util.     put       length      time     count
+--------------------------------------------------------------------------------
+pack         fcfs     366.85185  0.740    0.00202    1.16339  577.07419       54
+product      fcfs      80.37277  0.162    0.00202    0.16577   82.22689       54
+
+STORAGE SUMMARY 
+
+storage                 alloc alloc dealloc dealloc            in-que  in-queue
+name             size  amount count  amount   count    util    length      time
+--------------------------------------------------------------------------------
+Backlog            10     1.0   109     1.0      99   0.893   0.37436   91.99428
+
+
+
+TABLE 1:  packing machine response time
+
+      minimum       290.000000          mean                  577.074186
+      maximum      1551.995251          variance           101269.113914
+      range        1261.995251          standard deviation    318.228085
+      observations          54          coefficient of var      0.551451
+
+TABLE 2:  production time response time
+
+      minimum        66.869452          mean                  267.919047
+      maximum      1013.785225          variance            54700.033382
+      range         946.915773          standard deviation    233.880383
+      observations          54          coefficient of var      0.872952
+
+TABLE 3:  storage table
+
+      minimum         1.000000          mean                    1.000000
+      maximum         1.000000          variance                0.000000
+      range           0.000000          standard deviation      0.000000
+      observations          54          coefficient of var      0.000000
+
+TABLE 4:  Number of losts 
+
+      minimum         1.000000          mean                   23.000000
+      maximum        45.000000          variance              172.500000
+      range          44.000000          standard deviation     13.133926
+      observations          45          coefficient of var      0.571040
+
+QTABLE 1:  num in packing
+
+      initial       0      minimum       0      mean                    1.163395
+      final         0      maximum       4      variance                1.029642
+      entries      54      range         4      standard deviation      1.014713
+      exits        54                           coeff of variation      0.872200
+
+                                             cumulative
+        number    total time    proportion   proportion
+
+             0    6975.41111     0.260418     0.260418   ***********         
+             1   12604.00991     0.470555     0.730973   ********************
+             2    3897.49360     0.145508     0.876481   ******              
+             3    2470.97704     0.092251     0.968732   ****                
+             4     837.51945     0.031268     1.000000   *                   
+
+QTABLE 2:  num in production
+
+      initial       0      minimum       0      mean                    0.165771
+      final         0      maximum       2      variance                0.145767
+      entries      54      range         2      standard deviation      0.381795
+      exits        54                           coeff of variation      2.303140
+
+                                             cumulative
+        number    total time    proportion   proportion
+
+             0   22445.28169     0.837967     0.837967   ********************
+             1    4240.00679     0.158295     0.996262   ****                
+             2     100.12263     0.003738     1.000000   .
+
+
+	Storage Report: Backlog
+    capacity      10
+    amt           0.908
+    util          0.893
+    srv_tm        2194.312
+    qlen          0.374
+    resp          91.994
+    completes     99
+    queued        35
+CSIM MODEL STATISTICS
+
+CPU time used (sec):         0.000 
+Events processed:              384 
+Memory allocated:            14752 bytes 
+Calls to malloc:                40 
+Processes 
+     Started:                  110 
+     Saved:                    233 
+     Terminated:               108 
+     High water mark:            6 
+Stacks 
+     Allocated:                123 
+     High water mark:          794 words 
+     Average:                  129 words 
+     Maximum:                  133 words 
+     Current:                  262 words 
+

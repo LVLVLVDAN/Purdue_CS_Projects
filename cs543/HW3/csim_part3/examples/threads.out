@@ -1,0 +1,28 @@
+
+ Thread Sim is born at time 0.000000
+
+ What happens when we call Cust? Let's find out 
+
+ Thread Sim is yielding control to Thread Cust at time 0.000000 
+
+ Thread Sim regains control from Cust at time 0.000000 
+
+ Thread Sim is going to hold for 10.000000 units at time 0.000000
+
+ Hi There! I am Thread Cust!
+
+ I was born at time 0.000000
+
+ I am going to hold for 10.000000 units at time 0.000000
+
+ Thread Sim is back again at time 10.000000
+
+ Thread Sim waits for Thread Cust to set a flag
+
+ I'm Thread Cust and I'm back at time 10.000000! 
+
+ Set a flag so Thread Sim can leave
+
+ I have nothing left to do and so I am leaving
+
+ Thread Sim is now leaving the system

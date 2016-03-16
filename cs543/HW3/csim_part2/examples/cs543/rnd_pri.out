@@ -1,0 +1,28 @@
+\begin{verbatim}
+            CSIM Simulation Report (Version 19.0 for SPARC Solaris)
+
+                           Mon Feb 15 17:51:13 2010
+
+
+                     Ending simulation time:        21.000
+                     Elapsed simulation time:       21.000
+                     CPU time used (seconds):        0.000
+
+
+FACILITY SUMMARY 
+
+facility     service    service          through-    queue     response   compl
+name           disc      time    util.     put       length      time     count
+--------------------------------------------------------------------------------
+f            rnd_pri    0.57143  0.952    1.66667    2.42857    1.45714       35
+
+
+
+TABLE 1:  serv tm
+
+      minimum         1.000000          mean                    1.000000
+      maximum         1.000000          variance                0.000000
+      range           0.000000          standard deviation      0.000000
+      observations          20          coefficient of var      0.000000
+
+\end{verbatim}
